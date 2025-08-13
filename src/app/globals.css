@@ -1,26 +1,202 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-nunito);
+}
+
+.montserrat-bold {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+}
+
+.wrapper {
+	max-width: 1550px;
+	width: 100%;
+	margin: 0 auto;
+}
+.header-img {
+	background-image: url("/images/header.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.car-img {
+	background-image: url("/images/car.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.title {
+	font-size: clamp(1.5rem, 2vw, 39.81px);
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	line-height: auto;
+}
+
+.text {
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 0;
+	line-height: auto;
+}
+
+.offer-container img {
+	transition: 0.3s ease;
+}
+.offer-container:hover img {
+	scale: 1.2;
+}
+.separate {
+	height: 60px;
+}
+
+.faq-line {
+	position: relative;
+}
+
+.faq-line::before {
+	position: absolute;
+	bottom: -4px;
+	content: "";
+	width: 100%;
+	height: 1px;
+	display: block;
+	background: rgba(0, 0, 0, 0.1);
+}
+.phone,
+.location,
+.link1,
+.link2,
+.link3 {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.phone::before {
+	content: "";
+	background-image: url("/icons/phone-big.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 20px;
+	width: 20px;
+}
+
+.location::before {
+	content: "";
+	background-image: url("/icons/location.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 20px;
+	width: 20px;
+}
+.link1::before {
+	content: "";
+	background-image: url("/icons/fb.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 20px;
+	width: 20px;
+}
+.link2::before {
+	content: "";
+	background-image: url("/icons/insta.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 20px;
+	width: 20px;
+}
+.link3::before {
+	content: "";
+	background-image: url("/icons/tiktok.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 20px;
+	width: 20px;
+}
+
+.about-banner {
+	background-image: url("/images/header.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50vh;
+}
+
+.black-tt,
+.black-insta,
+.black-fb,
+.black-loc,
+.black-mail,
+.black-tel {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.black-tt::before {
+	content: "";
+	background-image: url("/icons/black-icons/black-tt.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 20px;
+	width: 20px;
+}
+.black-insta::before {
+	content: "";
+	background-image: url("/icons/black-icons/black-insta.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 20px;
+	width: 20px;
+}
+.black-fb::before {
+	content: "";
+	background-image: url("/icons/black-icons/black-fb.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 20px;
+	width: 20px;
+}
+.black-loc::before {
+	content: "";
+	background-image: url("/icons/black-icons/black-lock.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 20px;
+	width: 20px;
+}
+.black-mail::before {
+	content: "";
+	background-image: url("/icons/mail.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 20px;
+	width: 20px;
+}
+.black-tel::before {
+	content: "";
+	background-image: url("/icons/black-icons/black-phone.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 20px;
+	width: 20px;
+}
+.glass-effect-dark {
+	background: linear-gradient(
+		135deg,
+		rgba(17, 25, 40, 0.55) 0%,
+		rgba(17, 25, 40, 0.35) 100%
+	);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	border-radius: 14px;
+
+	backdrop-filter: blur(20px) saturate(180%) brightness(1.05) contrast(1.1);
+	-webkit-backdrop-filter: blur(20px) saturate(180%) brightness(1.05)
+		contrast(1.1);
+
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+	background-clip: padding-box;
 }
