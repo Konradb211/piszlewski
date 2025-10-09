@@ -5,38 +5,38 @@ interface faqTypes {
 
 export const faq: faqTypes[] = [
 	{
-		title: "czy sram",
+		title: "test",
 		content:
-			"tak może nie wiem xpp lorem impsum dolores sorki dolores mordo co u dziebie u mnie git elo eleo eloakdoaskdosakdosakodksaokd oaskd osakd oaskodkaso dkaoskd oaskdoasko dkasokd oaskd oaskd oa",
+			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus libero animi, eos suscipit voluptate alias enim, est nostrum quos repellat nulla fuga, rem explicabo nisi consectetur expedita id itaque.",
 	},
 	{
-		title: "czy sram",
+		title: "test",
 		content:
-			"tak może nie wiem xpp lorem impsum dolores sorki dolores mordo co u dziebie u mnie git elo eleo eloakdoaskdosakdosakodksaokd oaskd osakd oaskodkaso dkaoskd oaskdoasko dkasokd oaskd oaskd oa",
+			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus libero animi, eos suscipit voluptate alias enim, est nostrum quos repellat nulla fuga, rem explicabo nisi consectetur expedita id itaque.",
 	},
 	{
-		title: "czy sram",
+		title: "test",
 		content:
-			"tak może nie wiem xpp lorem impsum dolores sorki dolores mordo co u dziebie u mnie git elo eleo eloakdoaskdosakdosakodksaokd oaskd osakd oaskodkaso dkaoskd oaskdoasko dkasokd oaskd oaskd oa",
+			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus libero animi, eos suscipit voluptate alias enim, est nostrum quos repellat nulla fuga, rem explicabo nisi consectetur expedita id itaque.",
 	},
 	{
-		title: "czy sram",
+		title: "test",
 		content:
-			"tak może nie wiem xpp lorem impsum dolores sorki dolores mordo co u dziebie u mnie git elo eleo eloakdoaskdosakdosakodksaokd oaskd osakd oaskodkaso dkaoskd oaskdoasko dkasokd oaskd oaskd oa",
+			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus libero animi, eos suscipit voluptate alias enim, est nostrum quos repellat nulla fuga, rem explicabo nisi consectetur expedita id itaque.",
 	},
 	{
-		title: "czy sram",
+		title: "test",
 		content:
-			"tak może nie wiem xpp lorem impsum dolores sorki dolores mordo co u dziebie u mnie git elo eleo eloakdoaskdosakdosakodksaokd oaskd osakd oaskodkaso dkaoskd oaskdoasko dkasokd oaskd oaskd oa",
+			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus libero animi, eos suscipit voluptate alias enim, est nostrum quos repellat nulla fuga, rem explicabo nisi consectetur expedita id itaque.",
 	},
 	{
-		title: "czy sram",
+		title: "test",
 		content:
-			"tak może nie wiem xpp lorem impsum dolores sorki dolores mordo co u dziebie u mnie git elo eleo eloakdoaskdosakdosakodksaokd oaskd osakd oaskodkaso dkaoskd oaskdoasko dkasokd oaskd oaskd oa",
+			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus libero animi, eos suscipit voluptate alias enim, est nostrum quos repellat nulla fuga, rem explicabo nisi consectetur expedita id itaque.",
 	},
 	{
-		title: "czy sram",
+		title: "test",
 		content:
-			"tak może nie wiem xpp lorem impsum dolores sorki dolores mordo co u dziebie u mnie git elo eleo eloakdoaskdosakdosakodksaokd oaskd osakd oaskodkaso dkaoskd oaskdoasko dkasokd oaskd oaskd oa",
+			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus libero animi, eos suscipit voluptate alias enim, est nostrum quos repellat nulla fuga, rem explicabo nisi consectetur expedita id itaque.",
 	},
 ]

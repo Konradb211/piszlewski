@@ -8,16 +8,19 @@ const AboutImages = () => {
 			<div className=' flex flex-col wrapper px-4'>
 				<div className='flex justify-center items-end gap-5 relative w-full'>
 					<p className='absolute w-full right-0 top-0 max-w-[1150px] '>
-						To właśnie dzięki wam - moim dotychczasowym klientom - mogę dziś
-						zrobić kolejny krok. Wasze zaufanie, dobre słowo i polecenia
-						pozwoliły mi rozwinąć skrzydła i dojść do miejsca, o którym kiedyś
-						tylko marzyłem. Za to ogromne dziękuję! 🙏🏻 Trzeba tu dopisać coś o
-						tym nowym garażu i essa będzie dużo tekstu budowa budowa. To właśnie
-						dzięki wam - moim dotychczasowym klientom - mogę dziś zrobić kolejny
-						krok. Wasze zaufanie, dobre słowo i polecenia pozwoliły mi rozwinąć
-						skrzydła i dojść do miejsca, o którym kiedyś tylko marzyłem. Za to
-						ogromne dziękuję! 🙏🏻 Trzeba tu dopisać coś o tym nowym garażu i essa
-						będzie dużo tekstu budowa budowa.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+						laboriosam quam libero temporibus. Quae, dolores optio delectus
+						natus officiis est provident cumque veritatis accusantium corporis
+						molestias alias modi quo, quidem repellendus earum cum neque
+						perferendis, aliquam sint excepturi aperiam nihil. Repudiandae
+						expedita in excepturi eveniet amet, pariatur ipsam nemo, tempore
+						provident iste enim dolorum consequatur harum blanditiis
+						perspiciatis magni quisquam? Eveniet impedit doloremque quam
+						voluptatum aperiam ducimus porro dolores laudantium omnis
+						perferendis! Adipisci vitae quae vel voluptas culpa repudiandae
+						minima officiis, fugit ipsum tenetur repellat velit explicabo
+						cupiditate, tempore incidunt quia facere quasi, esse molestias
+						eligendi. Ea, nostrum suscipit. Impedit?
 					</p>
 					{aboutRealizations.map(item => (
 						<>

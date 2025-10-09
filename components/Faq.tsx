@@ -18,8 +18,9 @@ const Faq = () => {
 				<div className='flex flex-col gap-2 flex-1'>
 					<Title>Faq</Title>
 					<p>
-						Detailing to wiele sztuczek i srania do gara! Sprawdź najczęsciej
-						zadawane pytania i dowiedz się więcej o branży
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed magni
+						explicabo soluta molestias. Blanditiis nesciunt, fugiat quae
+						voluptate aut accusamus!
 					</p>
 					{faq.map((item, index) => (
 						<div
