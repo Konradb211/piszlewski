@@ -12,7 +12,7 @@ export default function Navigation() {
 
 	return (
 		<div>
-			<nav className='fixed py-4 px-4 inset-x-0 top-0 z-[9999] backdrop-blur-lg bg-[rgba(17,25,40,0.55)] shadow-2xl border-b border-white/20 [filter:brightness(1.05)_contrast(1.1)_saturate(1.8)]'>
+			<nav className='fixed py-4 px-4 inset-x-0 top-0 z-[9999] backdrop-blur-lg bg-[rgba(17,25,40,0.55)] border-none shadow-2xl border-b [filter:brightness(1.05)_contrast(1.1)_saturate(1.8)]'>
 				<div className=' wrapper container flex flex-wrap items-center justify-between mx-auto text-slate-800'>
 					<Link
 						href='/'

@@ -5,37 +5,27 @@ interface faqTypes {
 
 export const faq: faqTypes[] = [
 	{
-		title: "test",
+		title: "Różnice pomiędzy 1/2/3 etapową korektą lakieru",
 		content:
 			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus libero animi, eos suscipit voluptate alias enim, est nostrum quos repellat nulla fuga, rem explicabo nisi consectetur expedita id itaque.",
 	},
 	{
-		title: "test",
+		title: "Ceramika czy folia PPF?",
 		content:
 			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus libero animi, eos suscipit voluptate alias enim, est nostrum quos repellat nulla fuga, rem explicabo nisi consectetur expedita id itaque.",
 	},
 	{
-		title: "test",
+		title: "Czy polerowanie lakieru usuwa głębokie rysy?",
 		content:
 			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus libero animi, eos suscipit voluptate alias enim, est nostrum quos repellat nulla fuga, rem explicabo nisi consectetur expedita id itaque.",
 	},
 	{
-		title: "test",
+		title: "Czy regeneracja lamp jest trwała?",
 		content:
 			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus libero animi, eos suscipit voluptate alias enim, est nostrum quos repellat nulla fuga, rem explicabo nisi consectetur expedita id itaque.",
 	},
 	{
-		title: "test",
-		content:
-			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus libero animi, eos suscipit voluptate alias enim, est nostrum quos repellat nulla fuga, rem explicabo nisi consectetur expedita id itaque.",
-	},
-	{
-		title: "test",
-		content:
-			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus libero animi, eos suscipit voluptate alias enim, est nostrum quos repellat nulla fuga, rem explicabo nisi consectetur expedita id itaque.",
-	},
-	{
-		title: "test",
+		title: "Czy można myć auto na myjni po założeniu PPF lub ceramiki?",
 		content:
 			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus libero animi, eos suscipit voluptate alias enim, est nostrum quos repellat nulla fuga, rem explicabo nisi consectetur expedita id itaque.",
 	},

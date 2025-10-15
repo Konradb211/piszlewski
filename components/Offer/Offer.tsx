@@ -1,151 +1,212 @@
 import React from "react"
 import { aboutRealizations } from "../../constants/imagesAbout"
 import Image from "next/image"
+import Title from "../Title"
 
 const Offer = () => {
 	return (
-		<>
-			<div className=' flex flex-col wrapper pb-24 pt-14 px-4'>
-				<div className='flex justify-center items-end gap-5 relative w-full'>
-					<p className='absolute w-full right-0 top-0 max-w-[1150px] '>
-						To właśnie dzięki wam - moim dotychczasowym klientom - mogę dziś
-						zrobić kolejny krok. Wasze zaufanie, dobre słowo i polecenia
-						pozwoliły mi rozwinąć skrzydła i dojść do miejsca, o którym kiedyś
-						tylko marzyłem. Za to ogromne dziękuję! 🙏🏻 Trzeba tu dopisać coś o
-						tym nowym garażu i essa będzie dużo tekstu budowa budowa. To właśnie
-						dzięki wam - moim dotychczasowym klientom - mogę dziś zrobić kolejny
-						krok. Wasze zaufanie, dobre słowo i polecenia pozwoliły mi rozwinąć
-						skrzydła i dojść do miejsca, o którym kiedyś tylko marzyłem. Za to
-						ogromne dziękuję! 🙏🏻 Trzeba tu dopisać coś o tym nowym garażu i essa
-						będzie dużo tekstu budowa budowa.
-					</p>
-					{aboutRealizations.map(item => (
-						<>
-							<Image
-								key={item.alt}
-								src={item.src}
-								alt={item.alt}
-								width={339}
-								height={283}
-								className='w-full'
-							/>
-						</>
-					))}
+		<div className='flex flex-col gap-10 py-14'>
+			<div className='wrapper px-4'>
+				<div className='flex gap-5'>
+					<div className='max-w-1/4 w-full'>
+						<Image
+							src='/images/about/image-about1.webp'
+							alt='Zdjęcie nr 1'
+							width={414}
+							height={323}
+							className='w-full h-full'
+						/>
+					</div>
+					<div className='flex flex-col justify-between max-w-3/4 w-full'>
+						<div>
+							<Title>polerowanie lakieru</Title>
+							<p>
+								Profesjonalne polerowanie lakieru (korekta lakieru) przywraca
+								połysk i głębię koloru, a także ogranicza widoczność zarysowań i
+								hologramów. Wykonujemy polerowanie samochodu w wariantach:
+								korekta 1-etapowa (odświeżenie), 2-etapowa (większa korekcja) i
+								3-etapowa (maksymalna regeneracja lakieru)
+							</p>
+						</div>
+						<div className='flex gap-5'>
+							{aboutRealizations.map(item => (
+								<div className='max-w-1/3 w-full' key={item.alt}>
+									<Image
+										src={item.src}
+										alt={item.alt}
+										width={339}
+										height={283}
+										className='w-full'
+									/>
+								</div>
+							))}
+						</div>
+					</div>
 				</div>
 			</div>
-			<div className=' flex flex-col wrapper pb-24'>
-				<div className='flex justify-center items-end gap-5 relative w-full'>
-					<p className='absolute w-full right-0 top-0 max-w-[1150px] '>
-						To właśnie dzięki wam - moim dotychczasowym klientom - mogę dziś
-						zrobić kolejny krok. Wasze zaufanie, dobre słowo i polecenia
-						pozwoliły mi rozwinąć skrzydła i dojść do miejsca, o którym kiedyś
-						tylko marzyłem. Za to ogromne dziękuję! 🙏🏻 Trzeba tu dopisać coś o
-						tym nowym garażu i essa będzie dużo tekstu budowa budowa. To właśnie
-						dzięki wam - moim dotychczasowym klientom - mogę dziś zrobić kolejny
-						krok. Wasze zaufanie, dobre słowo i polecenia pozwoliły mi rozwinąć
-						skrzydła i dojść do miejsca, o którym kiedyś tylko marzyłem. Za to
-						ogromne dziękuję! 🙏🏻 Trzeba tu dopisać coś o tym nowym garażu i essa
-						będzie dużo tekstu budowa budowa.
-					</p>
-					{aboutRealizations.map(item => (
-						<>
-							<Image
-								key={item.alt}
-								src={item.src}
-								alt={item.alt}
-								width={339}
-								height={283}
-								className='w-full'
-							/>
-						</>
-					))}
+			<div className='wrapper px-4'>
+				<div className='flex gap-5'>
+					<div className='max-w-1/4 w-full'>
+						<Image
+							src='/images/about/image-about1.webp'
+							alt='Zdjęcie nr 1'
+							width={414}
+							height={323}
+							className='w-full h-full'
+						/>
+					</div>
+					<div className='flex flex-col justify-between max-w-3/4 w-full'>
+						<div>
+							<Title>kosmetyka wnętrza</Title>
+							<p>
+								Regeneracja reflektorów (polerowanie lamp) przywraca
+								przejrzystość zmatowiałym i „pożółkłym” kloszom, poprawiając
+								bezpieczeństwo i wygląd auta. Zabieg zwiększa skuteczność
+								oświetlenia i pomaga przejść okresowy przegląd. Polerujemy lampy
+								z zewnątrz i od wewnątrz (gdy to technicznie możliwe), komplet
+								lub pojedynczo. Opcjonalnie nakładamy powłokę ceramiczną na
+								lampy dla dłuższej ochrony przed UV i mikrorysami.
+							</p>
+						</div>
+						<div className='flex gap-5'>
+							{aboutRealizations.map(item => (
+								<div className='max-w-1/3 w-full' key={item.alt}>
+									<Image
+										src={item.src}
+										alt={item.alt}
+										width={339}
+										height={283}
+										className='w-full'
+									/>
+								</div>
+							))}
+						</div>
+					</div>
 				</div>
 			</div>
-			<div className=' flex flex-col wrapper pb-24'>
-				<div className='flex justify-center items-end gap-5 relative w-full'>
-					<p className='absolute w-full right-0 top-0 max-w-[1150px] '>
-						To właśnie dzięki wam - moim dotychczasowym klientom - mogę dziś
-						zrobić kolejny krok. Wasze zaufanie, dobre słowo i polecenia
-						pozwoliły mi rozwinąć skrzydła i dojść do miejsca, o którym kiedyś
-						tylko marzyłem. Za to ogromne dziękuję! 🙏🏻 Trzeba tu dopisać coś o
-						tym nowym garażu i essa będzie dużo tekstu budowa budowa. To właśnie
-						dzięki wam - moim dotychczasowym klientom - mogę dziś zrobić kolejny
-						krok. Wasze zaufanie, dobre słowo i polecenia pozwoliły mi rozwinąć
-						skrzydła i dojść do miejsca, o którym kiedyś tylko marzyłem. Za to
-						ogromne dziękuję! 🙏🏻 Trzeba tu dopisać coś o tym nowym garażu i essa
-						będzie dużo tekstu budowa budowa.
-					</p>
-					{aboutRealizations.map(item => (
-						<>
-							<Image
-								key={item.alt}
-								src={item.src}
-								alt={item.alt}
-								width={339}
-								height={283}
-								className='w-full'
-							/>
-						</>
-					))}
+			<div className='wrapper px-4'>
+				<div className='flex gap-5'>
+					<div className='max-w-1/4 w-full'>
+						<Image
+							src='/images/about/image-about1.webp'
+							alt='Zdjęcie nr 1'
+							width={414}
+							height={323}
+							className='w-full h-full'
+						/>
+					</div>
+					<div className='flex flex-col justify-between max-w-3/4 w-full'>
+						<div>
+							<Title>polerowanie lamp</Title>
+							<p>
+								Regeneracja reflektorów (polerowanie lamp) przywraca
+								przejrzystość zmatowiałym i „pożółkłym” kloszom, poprawiając
+								bezpieczeństwo i wygląd auta. Zabieg zwiększa skuteczność
+								oświetlenia i pomaga przejść okresowy przegląd. Polerujemy lampy
+								z zewnątrz i od wewnątrz (gdy to technicznie możliwe), komplet
+								lub pojedynczo. Opcjonalnie nakładamy powłokę ceramiczną na
+								lampy dla dłuższej ochrony przed UV i mikrorysami.
+							</p>
+						</div>
+						<div className='flex gap-5'>
+							{aboutRealizations.map(item => (
+								<div className='max-w-1/3 w-full' key={item.alt}>
+									<Image
+										src={item.src}
+										alt={item.alt}
+										width={339}
+										height={283}
+										className='w-full'
+									/>
+								</div>
+							))}
+						</div>
+					</div>
 				</div>
 			</div>
-			<div className=' flex flex-col wrapper pb-24'>
-				<div className='flex justify-center items-end gap-5 relative w-full'>
-					<p className='absolute w-full right-0 top-0 max-w-[1150px] '>
-						To właśnie dzięki wam - moim dotychczasowym klientom - mogę dziś
-						zrobić kolejny krok. Wasze zaufanie, dobre słowo i polecenia
-						pozwoliły mi rozwinąć skrzydła i dojść do miejsca, o którym kiedyś
-						tylko marzyłem. Za to ogromne dziękuję! 🙏🏻 Trzeba tu dopisać coś o
-						tym nowym garażu i essa będzie dużo tekstu budowa budowa. To właśnie
-						dzięki wam - moim dotychczasowym klientom - mogę dziś zrobić kolejny
-						krok. Wasze zaufanie, dobre słowo i polecenia pozwoliły mi rozwinąć
-						skrzydła i dojść do miejsca, o którym kiedyś tylko marzyłem. Za to
-						ogromne dziękuję! 🙏🏻 Trzeba tu dopisać coś o tym nowym garażu i essa
-						będzie dużo tekstu budowa budowa.
-					</p>
-					{aboutRealizations.map(item => (
-						<>
-							<Image
-								key={item.alt}
-								src={item.src}
-								alt={item.alt}
-								width={339}
-								height={283}
-								className='w-full'
-							/>
-						</>
-					))}
+			<div className='wrapper px-4'>
+				<div className='flex gap-5'>
+					<div className='max-w-1/4 w-full'>
+						<Image
+							src='/images/about/image-about1.webp'
+							alt='Zdjęcie nr 1'
+							width={414}
+							height={323}
+							className='w-full h-full'
+						/>
+					</div>
+					<div className='flex flex-col justify-between max-w-3/4 w-full'>
+						<div>
+							<Title>przygotowanie do sprzedaży</Title>
+							<p>
+								Zabezpieczamy karoserię folią ochronną PPF, która chroni przed
+								odpryskami, zarysowaniami i agresywną chemią. Aplikujemy powłoki
+								ceramiczne, dzięki którym lakier zyskuje wysoki połysk, silną
+								hydrofobowość i łatwość mycia, a brud mniej przywiera.
+								Wykonujemy dechroming — trwałe, estetyczne zaciemnienie
+								elementów chromowanych dopasowane do stylu auta. Pracujemy
+								pakietowo (front/newralgiczne strefy/cała karoseria) z
+								precyzyjnym dopasowaniem folii.
+							</p>
+						</div>
+						<div className='flex gap-5'>
+							{aboutRealizations.map(item => (
+								<div className='max-w-1/3 w-full' key={item.alt}>
+									<Image
+										src={item.src}
+										alt={item.alt}
+										width={339}
+										height={283}
+										className='w-full'
+									/>
+								</div>
+							))}
+						</div>
+					</div>
 				</div>
 			</div>
-			<div className=' flex flex-col wrapper pb-24'>
-				<div className='flex justify-center items-end gap-5 relative w-full'>
-					<p className='absolute w-full right-0 top-0 max-w-[1150px] '>
-						To właśnie dzięki wam - moim dotychczasowym klientom - mogę dziś
-						zrobić kolejny krok. Wasze zaufanie, dobre słowo i polecenia
-						pozwoliły mi rozwinąć skrzydła i dojść do miejsca, o którym kiedyś
-						tylko marzyłem. Za to ogromne dziękuję! 🙏🏻 Trzeba tu dopisać coś o
-						tym nowym garażu i essa będzie dużo tekstu budowa budowa. To właśnie
-						dzięki wam - moim dotychczasowym klientom - mogę dziś zrobić kolejny
-						krok. Wasze zaufanie, dobre słowo i polecenia pozwoliły mi rozwinąć
-						skrzydła i dojść do miejsca, o którym kiedyś tylko marzyłem. Za to
-						ogromne dziękuję! 🙏🏻 Trzeba tu dopisać coś o tym nowym garażu i essa
-						będzie dużo tekstu budowa budowa.
-					</p>
-					{aboutRealizations.map(item => (
-						<>
-							<Image
-								key={item.alt}
-								src={item.src}
-								alt={item.alt}
-								width={339}
-								height={283}
-								className='w-full'
-							/>
-						</>
-					))}
+			<div className='wrapper px-4'>
+				<div className='flex gap-5'>
+					<div className='max-w-1/4 w-full'>
+						<Image
+							src='/images/about/image-about1.webp'
+							alt='Zdjęcie nr 1'
+							width={414}
+							height={323}
+							className='w-full h-full'
+						/>
+					</div>
+					<div className='flex flex-col justify-between max-w-3/4 w-full'>
+						<div>
+							<Title>folie i powłoki ochronne</Title>
+							<p>
+								Zabezpieczamy karoserię folią ochronną PPF, która chroni przed
+								odpryskami, zarysowaniami i agresywną chemią. Aplikujemy powłoki
+								ceramiczne, dzięki którym lakier zyskuje wysoki połysk, silną
+								hydrofobowość i łatwość mycia, a brud mniej przywiera.
+								Wykonujemy dechroming — trwałe, estetyczne zaciemnienie
+								elementów chromowanych dopasowane do stylu auta. Pracujemy
+								pakietowo (front/newralgiczne strefy/cała karoseria) z
+								precyzyjnym dopasowaniem folii.
+							</p>
+						</div>
+						<div className='flex gap-5'>
+							{aboutRealizations.map(item => (
+								<div className='max-w-1/3 w-full' key={item.alt}>
+									<Image
+										src={item.src}
+										alt={item.alt}
+										width={339}
+										height={283}
+										className='w-full'
+									/>
+								</div>
+							))}
+						</div>
+					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	)
 }
 

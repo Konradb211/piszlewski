@@ -1,6 +1,6 @@
 const Form = () => {
 	return (
-		<div className='flex justify-between items-start wrapper pt-16 pb-16 px-4'>
+		<div className='flex flex-col md:flex-row justify-between items-start wrapper pt-8 md:pt-16 gap-5 pb-16 px-4'>
 			<div className='max-w-[600px] w-full'>
 				<h2 className='text-4xl font-bold uppercase pb-2'>
 					Skontaktuj się ze mną!

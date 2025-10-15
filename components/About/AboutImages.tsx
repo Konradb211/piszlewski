@@ -1,39 +1,51 @@
 import Image from "next/image"
-import { aboutRealizations, imagesAbout } from "../../constants/imagesAbout"
+import { aboutRealizations } from "../../constants/imagesAbout"
 import BeforeAfter from "../BeforeAfter"
 
 const AboutImages = () => {
 	return (
 		<>
-			<div className=' flex flex-col wrapper px-4'>
-				<div className='flex justify-center items-end gap-5 relative w-full'>
-					<p className='absolute w-full right-0 top-0 max-w-[1150px] '>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-						laboriosam quam libero temporibus. Quae, dolores optio delectus
-						natus officiis est provident cumque veritatis accusantium corporis
-						molestias alias modi quo, quidem repellendus earum cum neque
-						perferendis, aliquam sint excepturi aperiam nihil. Repudiandae
-						expedita in excepturi eveniet amet, pariatur ipsam nemo, tempore
-						provident iste enim dolorum consequatur harum blanditiis
-						perspiciatis magni quisquam? Eveniet impedit doloremque quam
-						voluptatum aperiam ducimus porro dolores laudantium omnis
-						perferendis! Adipisci vitae quae vel voluptas culpa repudiandae
-						minima officiis, fugit ipsum tenetur repellat velit explicabo
-						cupiditate, tempore incidunt quia facere quasi, esse molestias
-						eligendi. Ea, nostrum suscipit. Impedit?
-					</p>
-					{aboutRealizations.map(item => (
-						<>
-							<Image
-								key={item.alt}
-								src={item.src}
-								alt={item.alt}
-								width={339}
-								height={283}
-								className='w-full'
-							/>
-						</>
-					))}
+			<div className='wrapper px-4'>
+				<div className='flex gap-5'>
+					<div className='max-w-1/4 w-full'>
+						<Image
+							src='/images/about/image-about1.webp'
+							alt='Zdjęcie nr 1'
+							width={414}
+							height={323}
+							className='w-full h-full'
+						/>
+					</div>
+					<div className='flex flex-col justify-between max-w-3/4 w-full'>
+						<div>
+							<p>
+								To właśnie dzięki wam - moim dotychczasowym klientom - mogę dziś
+								zrobić kolejny krok. Wasze zaufanie, dobre słowo i polecenia
+								pozwoliły mi rozwinąć skrzydła i dojść do miejsca, o którym
+								kiedyś tylko marzyłem. Za to ogromne dziękuję! 🙏🏻 Trzeba tu
+								dopisać coś o tym nowym garażu i essa będzie dużo tekstu budowa
+								budowa. To właśnie dzięki wam - moim dotychczasowym klientom -
+								mogę dziś zrobić kolejny krok. Wasze zaufanie, dobre słowo i
+								polecenia pozwoliły mi rozwinąć skrzydła i dojść do miejsca, o
+								którym kiedyś tylko marzyłem. Za to ogromne dziękuję! 🙏🏻 Trzeba
+								tu dopisać coś o tym nowym garażu i essa będzie dużo tekstu
+								budowa budowa.
+							</p>
+						</div>
+						<div className='flex gap-5'>
+							{aboutRealizations.map(item => (
+								<div className='max-w-1/3 w-full' key={item.alt}>
+									<Image
+										src={item.src}
+										alt={item.alt}
+										width={339}
+										height={283}
+										className='w-full'
+									/>
+								</div>
+							))}
+						</div>
+					</div>
 				</div>
 			</div>
 			<div className='wrapper pb-24'>

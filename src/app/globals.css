@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+html,
+body {
+	cursor: url("/icons/cursor.png"), default;
+}
+
 body {
 	font-family: var(--font-nunito);
 }

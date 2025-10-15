@@ -1,20 +1,29 @@
 import React from "react"
 import Title from "./Title"
 import OfferImages from "./OfferImages"
+import Button from "./Button"
 
 const OfferSection = () => {
 	return (
 		<div className='wrapper px-4'>
 			<div>
-				<Title color='text-black'>moja oferta</Title>
+				<div className='flex justify-between items-center'>
+					<Title color='text-black'>moja oferta</Title>
+					<Button className='bg-[#203621] text-white'>
+						DOWIEDZ SIĘ WIĘCEJ
+					</Button>
+				</div>
+
 				<p className='text w-3/5 '>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat. Duis aute irure dolor in
-					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-					culpa qui officia deserunt mollit anim id est laborum.
+					W Carismatic zajmuję się kompleksową pielęgnacją i ochroną samochodów
+					– od polerowania lakieru, przez czyszczenie i pranie wnętrza, aż po
+					regenerację reflektorów i aplikację powłok ceramicznych oraz folii
+					PPF.Każdy samochód traktuję indywidualnie – dopasowuję zakres prac do
+					jego stanu i oczekiwań właściciela.W moim studiu w Lesznie możesz
+					odświeżyć lakier, zabezpieczyć karoserię, przygotować auto do
+					sprzedaży lub po prostu przywrócić mu wygląd, jakiego dawno nie
+					widziałeś. Tutaj liczy się precyzja, jakość i efekt, który widać od
+					pierwszego spojrzenia.
 				</p>
 			</div>
 			<OfferImages />

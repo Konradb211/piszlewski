@@ -22,13 +22,14 @@ const HomeAbout = () => {
 				<div className='w-1/2'>
 					<Title color='text-white'>trochę o mnie</Title>
 					<p className='text-white pt-2.5 pb-4'>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa qui officia deserunt mollit anim id est laborum.
+						Nazywam się Kacper i od kilku lat z pasją zajmuję się auto
+						detailingiem. Zaczynałem w niewielkim garażu w Lesznie, a dzięki
+						zaufaniu klientów mogłem rozwijać swoje umiejętności i tworzyć
+						miejsce, które dziś stało się moim drugim domem – nowoczesne studio
+						detailingu. Każdy samochód traktuję indywidualnie, zwracając uwagę
+						na każdy detal. Dla mnie to nie tylko praca, ale sposób, by pokazać,
+						jak wiele można wydobyć z lakieru i wnętrza auta. culpa qui officia
+						deserunt mollit anim id est laborum.
 					</p>
 					<Button className='uppercase text-white text-[13px] border-2 border-solid'>
 						Dowiedz się więcej

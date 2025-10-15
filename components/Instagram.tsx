@@ -41,13 +41,10 @@ const Instagram = () => {
 			<div className='max-w-1/2 w-full'>
 				<Title>ZAJRZYJ NA INSTAGRAMA! </Title>
 				<p className='pb-8'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat. Duis aute irure dolor in
-					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-					culpa qui officia deserunt mollit anim id est laborum.
+					To właśnie tam pokazuję efekty mojej pracy, kulisy realizacji i
+					przemiany aut przed i po detailingu. Znajdziesz tam rolki, zdjęcia i
+					relacje z codziennej pracy w studiu – od klasyków po najnowsze modele.
+					Wpadnij i zobacz, co dziś stoi u mnie w garażu!
 				</p>
 				<Button className='bg-[#203621] text-white'>DOWIEDZ SIĘ WIĘCEJ</Button>
 			</div>
