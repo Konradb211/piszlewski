@@ -14,8 +14,8 @@ const Faq = () => {
 
 	return (
 		<div className='wrapper pt-20 px-4'>
-			<div className='flex justify-between gap-28'>
-				<div className='flex flex-col gap-2 flex-1'>
+			<div className='flex flex-col md:flex-row items-center md:items-start gap-5 justify-between w-full'>
+				<div className='flex flex-col gap-2 md:max-w-1/2 max-w-full'>
 					<Title>Faq</Title>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed magni
@@ -47,8 +47,8 @@ const Faq = () => {
 						</div>
 					))}
 				</div>
-				<div>
-					<div className='mx-auto max-w-4xl'>
+				<div className='md:max-w-1/2 max-w-full'>
+					<div className=''>
 						<BeforeAfter
 							beforeSrc='/images/about/aboutMe.webp'
 							afterSrc='/images/about/image-about1.webp'

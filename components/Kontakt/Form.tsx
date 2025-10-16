@@ -1,7 +1,7 @@
 const Form = () => {
 	return (
-		<div className='flex flex-col md:flex-row justify-between items-start wrapper pt-8 md:pt-16 gap-5 pb-16 px-4'>
-			<div className='max-w-[600px] w-full'>
+		<div className='flex flex-col md:flex-row justify-between items-start wrapper pt-8 md:pt-16 md:gap-5 gap-8 pb-16 px-4'>
+			<div className='md:max-w-[600px] max-w-full w-full'>
 				<h2 className='text-4xl font-bold uppercase pb-2'>
 					Skontaktuj się ze mną!
 				</h2>
@@ -10,26 +10,26 @@ const Form = () => {
 					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
 					minim veniam, quis nostrud exercitation ullamco laboris nisi.
 				</p>
-				<div className='flex flex-col gap-4 pt-4'>
-					<a href='tel:603567003' className='black-tel'>
+				<div className='flex md:flex-col flex-row flex-wrap gap-4 pt-4'>
+					<a href='tel:603567003' className='black-tel flex-1'>
 						603 567 003
 					</a>
-					<a href='mailto:kontakt@twojadomena.pl' className='black-mail'>
+					<a href='mailto:kontakt@twojadomena.pl' className='black-mail flex-1'>
 						piszlu@piszlu.pl
 					</a>
 					<p className='black-loc'>ul. Braci Grimm, Święciechowa</p>
-					<a href='' className='black-fb'>
+					<a href='' className='black-fb flex-1'>
 						piszluFB
 					</a>
-					<a href='' className='black-insta'>
+					<a href='' className='black-insta flex-1'>
 						piszluINSTA
 					</a>
-					<a href='' className='black-tt'>
+					<a href='' className='black-tt flex-1'>
 						piszluTIKTOK
 					</a>
 				</div>
 			</div>
-			<div className='max-w-[600px] w-full'>
+			<div className='md:max-w-[600px] max-w-full w-full'>
 				<h2 className='text-2xl font-bold uppercase pb-2'>
 					Formularz kontaktowy
 				</h2>

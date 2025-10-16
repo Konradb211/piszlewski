@@ -10,7 +10,7 @@ const page = () => {
 			<Form />
 			<Map />
 			<Faq />
-			<div className='pb-24' />
+			<div className='pb-10' />
 		</>
 	)
 }
