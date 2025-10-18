@@ -36,14 +36,14 @@ const Form = () => {
 				<form action='' className='flex flex-col gap-2'>
 					<div className='flex gap-2'>
 						<input
-							className='w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#203621]'
+							className='w-full p-3 border border-[#203621] rounded-md focus:outline-none focus:ring-2 focus:ring-[#203621]'
 							id='names'
 							name='names'
 							type='text'
 							placeholder='Imię'
 						/>
 						<input
-							className='w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#203621]'
+							className='w-full p-3 border border-[#203621] rounded-md focus:outline-none focus:ring-2 focus:ring-[#203621]'
 							id='surname'
 							name='surname'
 							type='text'
@@ -52,14 +52,14 @@ const Form = () => {
 					</div>
 					<div className='flex gap-2'>
 						<input
-							className='w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#203621]'
+							className='w-full p-3 border border-[#203621] rounded-md focus:outline-none focus:ring-2 focus:ring-[#203621]'
 							id='phone'
 							name='phone'
 							type='text'
 							placeholder='Numer telefonu'
 						/>
 						<input
-							className='w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#203621]'
+							className='w-full p-3 border border-[#203621] rounded-md focus:outline-none focus:ring-2 focus:ring-[#203621]'
 							id='email'
 							name='email'
 							type='text'
@@ -68,7 +68,7 @@ const Form = () => {
 					</div>
 					<div>
 						<textarea
-							className='w-full h-32 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#203621]'
+							className='w-full h-32 p-3 border border-[#203621] rounded-md focus:outline-none focus:ring-2 focus:ring-[#203621]'
 							placeholder='Wpisz wiadomość...'></textarea>
 					</div>
 					<div className='flex'>

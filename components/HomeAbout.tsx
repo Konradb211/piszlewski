@@ -5,16 +5,12 @@ import Image from "next/image"
 
 const HomeAbout = () => {
 	return (
-		<section className='relative overflow-hidden rounded-2xl'>
-			{/* Warstwa tła (obraz/tekstura) */}
-			<div className='absolute inset-0 -skew-y-2 car-img rounded-2xl' />
-			{/* Ciemnozielona warstwa kolorystyczna */}
-			<div className='absolute inset-0 -skew-y-2 bg-[#1B341F] opacity-90 rounded-2xl' />
+		<section className='relative overflow-hidden '>
+			<div className='absolute inset-0  car-img ' />
+			<div className='absolute inset-0  bg-[#1B341F] opacity-90 ' />
 
-			{/* Treść */}
 			<div className='wrapper relative z-10 px-4 py-12 sm:py-14 lg:py-[116px]'>
 				<div className='flex flex-col lg:flex-row items-center lg:items-start justify-center gap-8 sm:gap-10 lg:gap-16'>
-					{/* Obrazek – ograniczony rozmiar, responsywny */}
 					<div className='flex-shrink-0'>
 						<div className='relative w-[220px] sm:w-[260px] lg:w-[310px]'>
 							<Image
@@ -29,7 +25,6 @@ const HomeAbout = () => {
 						</div>
 					</div>
 
-					{/* Tekst + CTA */}
 					<div className='w-full lg:w-1/2 text-white'>
 						<Title color='text-white'>trochę o mnie</Title>
 						<p className='pt-3 sm:pt-3.5 pb-4 sm:pb-5 leading-relaxed'>

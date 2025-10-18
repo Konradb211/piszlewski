@@ -6,19 +6,20 @@ const AboutImages = () => {
 	return (
 		<>
 			<div className='wrapper px-4'>
-				<div className='flex gap-5'>
-					<div className='max-w-1/4 w-full'>
+				<div className='flex flex-col lg:flex-row gap-5'>
+					<div className='w-full lg:w-1/4'>
 						<Image
 							src='/images/about/image-about1.webp'
 							alt='Zdjęcie nr 1'
 							width={414}
 							height={323}
-							className='w-full h-full'
+							className='w-full h-auto lg:h-full object-cover rounded-2xl  lg:rounded-none lg:rounded-tr-[161px] '
 						/>
 					</div>
-					<div className='flex flex-col justify-between max-w-3/4 w-full'>
+
+					<div className='flex flex-col justify-between w-full lg:w-3/4 gap-2'>
 						<div>
-							<p>
+							<p className='text-sm sm:text-base leading-relaxed'>
 								To właśnie dzięki wam - moim dotychczasowym klientom - mogę dziś
 								zrobić kolejny krok. Wasze zaufanie, dobre słowo i polecenia
 								pozwoliły mi rozwinąć skrzydła i dojść do miejsca, o którym
@@ -32,15 +33,16 @@ const AboutImages = () => {
 								budowa budowa.
 							</p>
 						</div>
-						<div className='flex gap-5'>
+
+						<div className='mt-4 lg:mt-0 grid grid-cols-2 sm:grid-cols-3 gap-4'>
 							{aboutRealizations.map(item => (
-								<div className='max-w-1/3 w-full' key={item.alt}>
+								<div className='w-full' key={item.alt}>
 									<Image
 										src={item.src}
 										alt={item.alt}
 										width={339}
 										height={283}
-										className='w-full'
+										className='w-full h-auto object-cover'
 									/>
 								</div>
 							))}
@@ -48,8 +50,9 @@ const AboutImages = () => {
 					</div>
 				</div>
 			</div>
-			<div className='wrapper pb-24'>
-				<p className='w-1/2 pb-12 pt-24'>
+
+			<div className='wrapper pb-24 px-4'>
+				<p className='w-full lg:w-1/2 pb-8 lg:pb-12 pt-12 lg:pt-24 text-base sm:text-lg leading-relaxed'>
 					Dziś spełniam kolejne marzenie - otwieram własne studio detailingu,
 					będące efektem lat doświadczeń, ciągłego rozwoju i miłości do
 					motoryzacji. To nowy rozdział, dzięki któremu wchodzę na jeszcze
@@ -57,7 +60,7 @@ const AboutImages = () => {
 				</p>
 
 				<div className='mx-auto'>
-					<div className='flex gap-6'>
+					<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6 items-stretch'>
 						<BeforeAfter
 							beforeSrc='/images/about/aboutMe.webp'
 							afterSrc='/images/about/image-about1.webp'
@@ -89,6 +92,7 @@ const AboutImages = () => {
 							lineColor='#ffffff'
 						/>
 					</div>
+
 					<Image src='' alt='placeholder' width={564} height={0} />
 				</div>
 			</div>
