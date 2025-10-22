@@ -56,28 +56,36 @@ export default function BeforeAfter({
 				heightPx ? { height: heightPx } : { aspectRatio: `${aspectRatio}` }
 			}
 			aria-label='Porównanie przed i po'>
+			{/* BEFORE — pełny kadr, bez zmian skali przy przesuwaniu */}
 			<Image
 				src={beforeSrc}
 				alt={beforeAlt}
 				fill
 				sizes='(max-width: 768px) 100vw, 800px'
 				className='object-cover'
+				style={{ objectPosition: "center center", pointerEvents: "none" }}
 				priority
 			/>
 
+			{/* AFTER — też pełny kadr; przycinany clip-path zamiast zmiany szerokości */}
 			<div
-				className='absolute inset-y-0 left-0 overflow-hidden'
-				style={{ width: `${pos}%` }}>
+				className='absolute inset-0'
+				style={{
+					// odsłoń lewą część: ucinamy prawą krawędź o (100 - pos)%
+					clipPath: `inset(0 ${100 - pos}% 0 0)`,
+				}}>
 				<Image
 					src={afterSrc}
 					alt={afterAlt}
 					fill
 					sizes='(max-width: 768px) 100vw, 800px'
 					className='object-cover'
+					style={{ objectPosition: "center center", pointerEvents: "none" }}
 					priority
 				/>
 			</div>
 
+			{/* linia podziału */}
 			<div
 				className='absolute top-0 bottom-0'
 				style={{
@@ -88,6 +96,7 @@ export default function BeforeAfter({
 				}}
 			/>
 
+			{/* uchwyt */}
 			<button
 				type='button'
 				aria-label='Suwak porównania'
@@ -124,6 +133,7 @@ export default function BeforeAfter({
 				</span>
 			</button>
 
+			{/* accessibility */}
 			<input
 				aria-hidden='true'
 				tabIndex={-1}

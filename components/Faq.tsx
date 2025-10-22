@@ -50,8 +50,8 @@ const Faq = () => {
 				<div className='md:max-w-1/2 max-w-full'>
 					<div className=''>
 						<BeforeAfter
-							beforeSrc='/images/about/aboutMe.webp'
-							afterSrc='/images/about/image-about1.webp'
+							beforeSrc='/images/beforeAfter/before.webp'
+							afterSrc='/images/beforeAfter/after.webp'
 							beforeAlt='Lakier przed korektą'
 							afterAlt='Lakier po korekcie'
 							initial={50}
