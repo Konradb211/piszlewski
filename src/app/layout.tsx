@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import "./globals.css"
+import "animate.css"
 import Navigation from "../../components/Navigation"
 import Footer from "../../components/Footer"
 import { Montserrat, Nunito } from "next/font/google"

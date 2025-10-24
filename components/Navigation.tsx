@@ -71,7 +71,7 @@ export default function Navigation() {
 							{navItems.map((item, index) => (
 								<li
 									key={index}
-									className='flex items-center gap-x-2 p-1 text-base uppercase text-white'>
+									className='flex items-center gap-x-2 p-1 text-base uppercase text-white font-bold hover:text-[#ffffff85]'>
 									<Link href={item.href} className='flex items-center'>
 										{item.name}
 									</Link>
@@ -108,7 +108,6 @@ export default function Navigation() {
           transform transition-transform duration-300 ease-in-out
           ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"}
 
-          /* ciemne szkło */
           bg-[rgba(17,25,40,0.55)] bg-clip-padding
           backdrop-blur-xl backdrop-saturate-150 backdrop-contrast-125 backdrop-brightness-110
           border-r border-white/10
@@ -117,10 +116,10 @@ export default function Navigation() {
         `}
 				role='dialog'
 				aria-modal='true'>
-				<div className='flex flex-row items-center border-b border-white/10 pt-4 pb-5 pl-4'>
+				<div className='flex flex-row items-center border-b border-white/10 pt-[1.813rem] pb-[1.625rem] pl-4'>
 					<Link
 						href='/'
-						className='mr-4 block cursor-pointer text-2xl font-bold text-red-600'
+						className='mr-4 block cursor-pointer text-2xl font-bold'
 						onClick={closeMobile}>
 						<Image
 							src='icons/logo.svg'
@@ -132,7 +131,7 @@ export default function Navigation() {
 
 					<button
 						onClick={closeMobile}
-						className='absolute right-4 top-3.5 text-white hover:text-red-500'
+						className='absolute right-4 top-[1.6rem] text-white hover:text-red-500'
 						aria-label='Zamknij menu'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
@@ -148,21 +147,38 @@ export default function Navigation() {
 						</svg>
 					</button>
 				</div>
-
-				<ul className='flex h-full flex-col gap-4 p-4 text-white'>
-					{navItems.map((item, index) => (
-						<li
-							key={index}
-							className='flex items-center gap-x-2 p-1 text-lg hover:text-red-500'>
-							<Link
-								href={item.href}
-								className='flex items-center uppercase'
-								onClick={closeMobile}>
-								{item.name}
-							</Link>
-						</li>
-					))}
-				</ul>
+				<div className='flex flex-col justify-between h-full'>
+					<ul className='flex h-full flex-col gap-4 p-4 text-white'>
+						{navItems.map((item, index) => (
+							<li
+								key={index}
+								className='flex items-center gap-x-2 p-1 text-lg hover:text-[#ffffff85] font-bold'>
+								<Link
+									href={item.href}
+									className='flex items-center uppercase'
+									onClick={closeMobile}>
+									{item.name}
+								</Link>
+							</li>
+						))}
+					</ul>
+					<div className='flex w-full justify-around h-full'>
+						{navContact.map((item, index) => (
+							<li
+								key={index}
+								className='flex items-center gap-2.5 p-1 text-base uppercase text-white'>
+								<Link href={item.href} className='flex items-center gap-2.5'>
+									<Image
+										src={item.icon ?? "/public/logo.svg"}
+										alt={`Ikona ${item.name}`}
+										width={20}
+										height={20}
+									/>
+								</Link>
+							</li>
+						))}
+					</div>
+				</div>
 			</div>
 
 			{isMobileMenuOpen && (
