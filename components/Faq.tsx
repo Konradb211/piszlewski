@@ -17,10 +17,9 @@ const Faq = () => {
 			<div className='flex flex-col md:flex-row items-center md:items-start gap-5 justify-between w-full'>
 				<div className='flex flex-col gap-2 md:max-w-1/2 max-w-full'>
 					<Title>Faq</Title>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed magni
-						explicabo soluta molestias. Blanditiis nesciunt, fugiat quae
-						voluptate aut accusamus!
+					<p className='font-bold pb-2'>
+						Zanim umówisz usługę – sprawdź najczęściej zadawane pytania o
+						detailingu i pielęgnacji auta
 					</p>
 					{faq.map((item, index) => (
 						<div
@@ -30,7 +29,7 @@ const Faq = () => {
 							<div
 								className='flex justify-between
 								 '>
-								<h2>{item.title}</h2>
+								<h2 className='font-bold'>{item.title}</h2>
 								<Image
 									className={openIndex === index ? "rotate-90" : ""}
 									src='/icons/faq-arrow.svg'

@@ -58,7 +58,7 @@ const OfferRow = ({
 
 const Offer = () => {
 	return (
-		<div className='flex flex-col gap-10 py-14'>
+		<div id='polerowanie-lakieru' className='flex flex-col gap-10 py-14'>
 			{offers.map(item => (
 				<OfferRow
 					key={item.title}

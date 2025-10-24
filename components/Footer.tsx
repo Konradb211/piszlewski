@@ -30,13 +30,19 @@ const Footer = () => {
 					</div>
 					<div className='flex flex-col text-white gap-3.5'>
 						<h2 className=' uppercase'>Wpadaj na sociale!</h2>
-						<Link className='link1' href='/'>
+						<Link
+							className='link1'
+							href='https://www.facebook.com/carismaticbypiszlu/'>
 							carismaticbypiszlu
 						</Link>
-						<Link className='link2' href='/'>
+						<Link
+							className='link2'
+							href='https://www.instagram.com/carismatic_detailing/'>
 							carismatic_detailing
 						</Link>
-						<Link className='link3' href='/'>
+						<Link
+							className='link3'
+							href='https://www.tiktok.com/@carismatic_detailing'>
 							carismatic_detailing
 						</Link>
 					</div>

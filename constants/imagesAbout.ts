@@ -13,5 +13,5 @@ export const imagesAbout: imgTypes[] = [
 export const aboutRealizations: imgTypes[] = [
 	{ src: "/images/about/image-about2.webp", alt: "zdj2" },
 	{ src: "/images/about/image-about3.webp", alt: "zdj3" },
-	{ src: "/images/about/image-about4.webp", alt: "zdj4" },
+	{ src: "/images/about/about-4.webp", alt: "zdj4" },
 ]

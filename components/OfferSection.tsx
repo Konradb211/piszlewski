@@ -9,7 +9,7 @@ const OfferSection = () => {
 			<div>
 				<div className='flex justify-between items-center flex-wrap'>
 					<Title color='text-black'>moja oferta</Title>
-					<Button className='bg-[#203621] text-white mb-4'>
+					<Button href='/oferta' className='bg-[#203621] text-white mb-4'>
 						DOWIEDZ SIĘ WIĘCEJ
 					</Button>
 				</div>

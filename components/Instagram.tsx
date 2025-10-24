@@ -61,7 +61,9 @@ const Instagram = () => {
 						relacje z codziennej pracy w studiu – od klasyków po najnowsze
 						modele. Wpadnij i zobacz, co dziś stoi u mnie w garażu!
 					</p>
-					<Button className='bg-[#203621] text-white'>
+					<Button
+						href='https://www.instagram.com/carismatic_detailing/'
+						className='bg-[#203621] text-white'>
 						DOWIEDZ SIĘ WIĘCEJ
 					</Button>
 				</div>

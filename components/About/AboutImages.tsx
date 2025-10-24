@@ -36,13 +36,13 @@ const AboutImages = () => {
 
 						<div className='mt-4 lg:mt-0 grid grid-cols-2 sm:grid-cols-3 gap-4'>
 							{aboutRealizations.map(item => (
-								<div className='w-full' key={item.alt}>
+								<div className='w-full h-full' key={item.alt}>
 									<Image
 										src={item.src}
 										alt={item.alt}
 										width={339}
 										height={283}
-										className='w-full h-auto object-cover'
+										className='w-full h-full object-cover max-w-[339px] max-h-[283px]'
 									/>
 								</div>
 							))}

@@ -3,7 +3,6 @@ import Title from "./Title"
 import { realizations } from "../constants/realizations"
 
 const Realizations = () => {
-	// dla czytelności nazwijmy je lokalnie
 	const [r1, r2, r3, r4, r5, r6, r7, r8, r9] = realizations
 
 	return (
@@ -28,14 +27,13 @@ const Realizations = () => {
 				))}
 			</div>
 
-			{/* DESKTOP ≥ lg – układ 1:1 z Twojego projektu */}
 			<div className='hidden lg:flex gap-4 justify-center mt-6'>
 				<div className='flex flex-col gap-4 w-full lg:w-1/3 max-h-[773px]'>
 					<Image
 						src={r9.src}
 						alt={r9.alt}
 						width={319}
-						height={277}
+						height={0}
 						className='w-full h-full rounded-xl object-cover'
 					/>
 					<Image

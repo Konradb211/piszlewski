@@ -14,8 +14,25 @@ export const navItems: navTypes[] = [
 ]
 
 export const navContact: navTypes[] = [
-	{ name: "phone", href: "/", content: "123123123", icon: "/icons/phone.svg" },
-	{ name: "facebook", href: "/", icon: "/icons/fb.svg" },
-	{ name: "instagram", href: "/", icon: "/icons/insta.svg" },
-	{ name: "tiktok", href: "/", icon: "/icons/tiktok.svg" },
+	{
+		name: "phone",
+		href: "tel:+48603567003",
+		content: "603567003",
+		icon: "/icons/phone.svg",
+	},
+	{
+		name: "facebook",
+		href: "https://www.facebook.com/carismaticbypiszlu/",
+		icon: "/icons/fb.svg",
+	},
+	{
+		name: "instagram",
+		href: "https://www.instagram.com/carismatic_detailing/",
+		icon: "/icons/insta.svg",
+	},
+	{
+		name: "tiktok",
+		href: "https://www.tiktok.com/@carismatic_detailing",
+		icon: "/icons/tiktok.svg",
+	},
 ]

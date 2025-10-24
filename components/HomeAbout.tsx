@@ -2,6 +2,7 @@ import React from "react"
 import Title from "./Title"
 import Button from "./Button"
 import Image from "next/image"
+import Link from "next/link"
 
 const HomeAbout = () => {
 	return (
@@ -37,8 +38,9 @@ const HomeAbout = () => {
 							sposób, by pokazać, jak wiele można wydobyć z lakieru i wnętrza
 							auta. culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-
-						<Button className='uppercase text-white text-[13px] border-2 border-solid'>
+						<Button
+							href='/o-firmie'
+							className='uppercase text-white text-[13px] hover:bg-[#203621] hover:border-[#203621] border-2 border-solid'>
 							Dowiedz się więcej
 						</Button>
 					</div>

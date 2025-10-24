@@ -6,18 +6,21 @@ const OfferImages = () => {
 	return (
 		<div
 			className='
-        flex flex-wrap justify-center sm:justify-between gap-4 pt-4
-        lg:flex-nowrap
-      '>
+				flex flex-wrap justify-center gap-4 pt-4
+			'>
 			{offerTypes.map((item, index) => (
 				<Link
-					href='/'
+					href={item.href}
 					key={index}
 					className='
-            w-full sm:w-[48%] md:w-[45%] lg:max-w-[250px] lg:w-full
-            flex flex-col offer-container transition-transform duration-300 hover:scale-[1.02]
-          '>
-					{/* obraz */}
+						flex flex-col offer-container
+						transition-transform duration-300 hover:scale-[1.02]
+						rounded-[10px] shadow-md
+
+						w-[calc(100%-1rem)]
+						sm:w-[calc(50%-0.5rem)]
+						lg:w-[calc(20%-0.8rem)]
+					'>
 					<div className='relative w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] rounded-t-[10px] overflow-hidden'>
 						<Image
 							src={item.src}
@@ -28,7 +31,6 @@ const OfferImages = () => {
 						/>
 					</div>
 
-					{/* tytuł */}
 					<div className='bg-[#203621] py-2.5 px-2 rounded-b-[10px] h-[55px] flex items-center justify-center shadow-md'>
 						<p className='text-center uppercase text-white text-[14px] tracking-wide leading-snug'>
 							{item.text}

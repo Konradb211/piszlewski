@@ -1,16 +1,20 @@
+import Link from "next/link"
 import { ReactNode } from "react"
 
 type ButtonProps = {
 	children: ReactNode
 	className: string
+	href: string
 }
 
-const Button = ({ children, className }: ButtonProps) => {
+const Button = ({ children, className, href }: ButtonProps) => {
 	return (
-		<button
-			className={`${className} uppercase cursor-pointer rounded-md py-3 px-4`}>
-			{children}
-		</button>
+		<Link href={href}>
+			<button
+				className={` hover:bg-[#164317] uppercase cursor-pointer rounded-md py-3 px-4 ${className}`}>
+				{children}
+			</button>
+		</Link>
 	)
 }
 
