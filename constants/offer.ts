@@ -21,6 +21,7 @@ korekta 1-etapowa (odświeżenie), 2-etapowa (większa korekcja) i 3-etapowa (ma
 			{ src: "/images/about/image-about1.webp", alt: "polerowanie lakieru 1" },
 			{ src: "/images/about/image-about1.webp", alt: "polerowanie lakieru 2" },
 			{ src: "/images/about/image-about1.webp", alt: "polerowanie lakieru 3" },
+			{ src: "/images/about/image-about1.webp", alt: "polerowanie lakieru 4" },
 		],
 	},
 	{
@@ -34,6 +35,7 @@ komplet lub pojedynczo. Opcjonalnie nakładamy powłokę ceramiczną na lampy dl
 			{ src: "/images/about/image-about1.webp", alt: "kosmetyka wnętrza 1" },
 			{ src: "/images/about/image-about1.webp", alt: "kosmetyka wnętrza 2" },
 			{ src: "/images/about/image-about1.webp", alt: "kosmetyka wnętrza 3" },
+			{ src: "/images/about/image-about1.webp", alt: "polerowanie lakieru 4" },
 		],
 	},
 	{
@@ -47,6 +49,7 @@ komplet lub pojedynczo. Opcjonalnie nakładamy powłokę ceramiczną na lampy dl
 			{ src: "/images/about/image-about1.webp", alt: "polerowanie lamp 1" },
 			{ src: "/images/about/image-about1.webp", alt: "polerowanie lamp 2" },
 			{ src: "/images/about/image-about1.webp", alt: "polerowanie lamp 3" },
+			{ src: "/images/about/image-about1.webp", alt: "polerowanie lakieru 4" },
 		],
 	},
 	{
@@ -70,6 +73,7 @@ z precyzyjnym dopasowaniem folii.`,
 				src: "/images/about/image-about1.webp",
 				alt: "przygotowanie do sprzedaży 3",
 			},
+			{ src: "/images/about/image-about1.webp", alt: "polerowanie lakieru 4" },
 		],
 	},
 	{
@@ -93,6 +97,7 @@ z precyzyjnym dopasowaniem folii.`,
 				src: "/images/about/image-about1.webp",
 				alt: "folie i powłoki ochronne 3",
 			},
+			{ src: "/images/about/image-about1.webp", alt: "polerowanie lakieru 4" },
 		],
 	},
 ]

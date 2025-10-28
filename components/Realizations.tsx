@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Title from "./Title"
 import { realizations } from "../constants/realizations"
+import AnimatedOnScroll from "./AnimatedOnScroll"
 
 const Realizations = () => {
 	const [r1, r2, r3, r4, r5, r6, r7, r8, r9] = realizations
@@ -28,7 +29,9 @@ const Realizations = () => {
 			</div>
 
 			<div className='hidden lg:flex gap-4 justify-center mt-6'>
-				<div className='flex flex-col gap-4 w-full lg:w-1/3 max-h-[773px]'>
+				<AnimatedOnScroll
+					className='flex flex-col gap-4 w-full lg:w-1/3 max-h-[773px]'
+					animation='animate__fadeInUp'>
 					<Image
 						src={r9.src}
 						alt={r9.alt}
@@ -50,9 +53,10 @@ const Realizations = () => {
 						height={290}
 						className='w-full h-full rounded-xl object-cover'
 					/>
-				</div>
-
-				<div className='flex flex-col gap-4 justify-center w-full lg:w-1/3'>
+				</AnimatedOnScroll>
+				<AnimatedOnScroll
+					className='flex flex-col gap-4 justify-center w-full lg:w-1/3'
+					animation='animate__fadeInUp'>
 					<Image
 						src={r8.src}
 						alt={r8.alt}
@@ -76,9 +80,11 @@ const Realizations = () => {
 							className='w-full h-full rounded-xl object-cover'
 						/>
 					</div>
-				</div>
+				</AnimatedOnScroll>
 
-				<div className='flex flex-col gap-4 w-full lg:w-1/3'>
+				<AnimatedOnScroll
+					className='flex flex-col gap-4 w-full lg:w-1/3'
+					animation='animate__fadeInUp'>
 					<div className='flex gap-4'>
 						<Image
 							src={r6.src}
@@ -102,7 +108,7 @@ const Realizations = () => {
 						height={502}
 						className='w-full h-full rounded-xl object-cover'
 					/>
-				</div>
+				</AnimatedOnScroll>
 			</div>
 		</div>
 	)

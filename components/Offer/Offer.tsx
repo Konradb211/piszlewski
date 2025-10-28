@@ -6,6 +6,7 @@ import Title from "../Title"
 import { offers } from "../../constants/offer"
 import Lightbox from "yet-another-react-lightbox"
 import "yet-another-react-lightbox/styles.css"
+import AnimatedOnScroll from "../AnimatedOnScroll"
 
 type OfferRowProps = {
 	title: string
@@ -35,44 +36,54 @@ const OfferRow = ({ title, text, heroSrc, images }: OfferRowProps) => {
 
 	return (
 		<div className='wrapper px-4'>
-			<div className='flex flex-col lg:flex-row gap-5'>
+			<div className='flex flex-col md:flex-row gap-5'>
 				<button
 					type='button'
 					onClick={handleHeroClick}
 					className='w-full lg:w-1/4 block group relative rounded-xl overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white'>
-					<Image
-						src={heroSrc}
-						alt={`${title} – zdjęcie główne`}
-						width={414}
-						height={323}
-						className='w-full h-auto lg:h-full object-cover rounded-xl transition-transform duration-200 group-hover:scale-[1.03]'
-						sizes='(max-width: 1024px) 100vw, 25vw'
-					/>
+					<AnimatedOnScroll className='h-full' animation='animate__fadeInUp'>
+						<Image
+							src={heroSrc}
+							alt={`${title} – zdjęcie główne`}
+							width={414}
+							height={323}
+							className='w-full h-auto lg:h-full object-cover rounded-xl transition-transform duration-200 group-hover:scale-[1.03]'
+							sizes='(max-width: 1024px) 100vw, 25vw'
+						/>
+					</AnimatedOnScroll>
 				</button>
 
 				<div className='w-full lg:w-3/4 flex flex-col justify-between'>
 					<div>
 						<Title>{title}</Title>
-						<p className='mt-2 text-sm sm:text-base leading-relaxed'>{text}</p>
+						<AnimatedOnScroll animation='animate__fadeInUp'>
+							<p className='mt-2 mb-2 text-sm sm:text-base leading-relaxed'>
+								{text}
+							</p>
+						</AnimatedOnScroll>
 					</div>
 
 					<div className='mt-4 lg:mt-0'>
-						<div className='grid grid-cols-2 sm:grid-cols-3 gap-4'>
+						<div className='grid grid-cols-2 sm:grid-cols-4 gap-4'>
 							{images.map((img, idx) => (
-								<button
+								<AnimatedOnScroll
+									className='h-full'
 									key={img.alt}
-									type='button'
-									className='w-full group relative rounded-xl overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white'
-									onClick={() => handleThumbClick(idx)}>
-									<Image
-										src={img.src}
-										alt={img.alt}
-										width={339}
-										height={283}
-										className='w-full h-auto object-cover rounded-xl transition-transform duration-200 group-hover:scale-[1.03]'
-										sizes='(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw'
-									/>
-								</button>
+									animation='animate__fadeInUp'>
+									<button
+										type='button'
+										className='w-full h-full group relative rounded-xl overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white'
+										onClick={() => handleThumbClick(idx)}>
+										<Image
+											src={img.src}
+											alt={img.alt}
+											width={339}
+											height={283}
+											className='w-full h-auto object-cover rounded-xl transition-transform duration-200 group-hover:scale-[1.03]'
+											sizes='(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw'
+										/>
+									</button>
+								</AnimatedOnScroll>
 							))}
 						</div>
 					</div>
