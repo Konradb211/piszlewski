@@ -13,7 +13,7 @@ const Button = ({ children, className, href }: ButtonProps) => {
 		<AnimatedOnScroll animation='animate__fadeInUp'>
 			<Link href={href}>
 				<button
-					className={` hover:bg-[#164317] uppercase cursor-pointer rounded-md py-3 px-4 ${className}`}>
+					className={` hover:bg-[#164317] uppercase text-[12px] md:text-base cursor-pointer rounded-md py-3 px-4 ${className}`}>
 					{children}
 				</button>
 			</Link>

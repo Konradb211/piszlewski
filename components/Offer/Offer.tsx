@@ -1,12 +1,13 @@
 "use client"
 
-import React, { useState } from "react"
+import { useState } from "react"
 import Image from "next/image"
 import Title from "../Title"
 import { offers } from "../../constants/offer"
 import Lightbox from "yet-another-react-lightbox"
 import "yet-another-react-lightbox/styles.css"
 import AnimatedOnScroll from "../AnimatedOnScroll"
+import HomeAbout from "../HomeAbout"
 
 type OfferRowProps = {
 	title: string
@@ -89,7 +90,6 @@ const OfferRow = ({ title, text, heroSrc, images }: OfferRowProps) => {
 					</div>
 				</div>
 			</div>
-
 			{/* LIGHTBOX */}
 			<Lightbox
 				open={open}
@@ -104,14 +104,21 @@ const OfferRow = ({ title, text, heroSrc, images }: OfferRowProps) => {
 const Offer = () => {
 	return (
 		<div id='polerowanie-lakieru' className='flex flex-col gap-10 py-14'>
-			{offers.map(item => (
-				<OfferRow
-					key={item.title}
-					title={item.title}
-					text={item.text}
-					heroSrc={item.heroSrc}
-					images={item.images}
-				/>
+			{offers.map((item, index) => (
+				<div key={item.title}>
+					<OfferRow
+						title={item.title}
+						text={item.text}
+						heroSrc={item.heroSrc}
+						images={item.images}
+					/>
+
+					{(index + 1) % 3 === 0 && index + 1 !== offers.length && (
+						<div className='mt-14 mb-4'>
+							<HomeAbout />
+						</div>
+					)}
+				</div>
 			))}
 		</div>
 	)

@@ -13,7 +13,7 @@ const Form = () => {
 					Jeśli chcesz dowiedzieć się więcej o moich usługach lub umówić się na
 					bezpłatną wycenę, zadzwoń lub wypełnij formularz kontaktowy!
 				</p>
-				<div className='flex md:flex-col flex-row flex-wrap gap-4 pt-4'>
+				<div className='flex flex-col gap-4 pt-4'>
 					<AnimatedOnScroll animation='animate__fadeInUp'>
 						<a href='tel:603567003' className='black-tel flex-1'>
 							603 567 003
